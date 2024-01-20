@@ -1,0 +1,155 @@
+.div {
+    background-color: #f8fafc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .div-2 {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    min-height: 750px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 60px;
+  }
+  @media (max-width: 991px) {
+    .div-2 {
+      max-width: 100%;
+      padding: 0 20px;
+    }
+  }
+  .img {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  .span {
+    position: relative;
+    display: flex;
+    width: 444px;
+    max-width: 100%;
+    flex-direction: column;
+    margin: 50px 0 55px;
+  }
+  @media (max-width: 991px) {
+    .span {
+      margin: 40px 0;
+    }
+  }
+  .span-2 {
+    border-radius: 4px;
+    box-shadow: 0px 6px 8px 0px rgba(0, 0, 0, 0.05);
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 46px;
+  }
+  @media (max-width: 991px) {
+    .span-2 {
+      max-width: 100%;
+      padding: 0 20px;
+    }
+  }
+  .div-3 {
+    color: #333;
+    align-self: stretch;
+    font: 700 14px Mulish, sans-serif;
+  }
+  .div-4 {
+    color: #333;
+    align-self: stretch;
+    margin-top: 15px;
+    font: 700 24px Mulish, sans-serif;
+  }
+  .div-5 {
+    color: #333;
+    align-self: stretch;
+    margin-top: 35px;
+    font: 500 14px Mulish, sans-serif;
+  }
+  .div-6 {
+    align-items: flex-start;
+    border-radius: 6px;
+    border: 1px solid #dedede;
+    align-self: stretch;
+    display: flex;
+    margin-top: 14px;
+    height: 45px;
+    width: 98%;
+    padding: 2px;
+    flex-direction: column;
+  }
+  .div-7 {
+    color: #333;
+    align-self: stretch;
+    margin-top: 19px;
+    font: 500 14px Mulish, sans-serif;
+  }
+  .div-8 {
+    align-items: flex-start;
+    border-radius: 6px;
+    border: 1px solid #dedede;
+    align-self: stretch;
+    display: flex;
+    margin-top: 14px;
+    height: 45px;
+    width: 98%;
+    padding: 2px;
+  
+    flex-direction: column;
+  }
+  .span-3 {
+    color: #fff;
+    text-transform: uppercase;
+    white-space: nowrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    background: linear-gradient(180deg, #625bf7 0%, #463eea 100%);
+    align-self: stretch;
+    margin-top: 30px;
+    padding: 13px 60px;
+    font: 800 16px/112.5% Mulish, -apple-system, Roboto, Helvetica,
+      sans-serif;
+    width: 100%;
+    border: none;
+  }
+  @media (max-width: 991px) {
+    .span-3 {
+      white-space: initial;
+      padding: 0 20px;
+    }
+  }
+  .div-9 {
+    color: #625bf7;
+    text-align: center;
+    align-self: center;
+    margin-top: 23px;
+    white-space: nowrap;
+    font: 700 12px Mulish, sans-serif;
+  }
+  @media (max-width: 991px) {
+    .div-9 {
+      white-space: initial;
+    }
+  }
+  .div-10 {
+    color: #625bf7;
+    text-align: center;
+    align-self: center;
+    margin-top: 53px;
+    white-space: nowrap;
+    font: 400 12px Mulish, sans-serif;
+  }
+  @media (max-width: 991px) {
+    .div-10 {
+      margin-top: 40px;
+      white-space: initial;
+    }
+  }

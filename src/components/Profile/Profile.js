@@ -9,6 +9,7 @@ function Profile() {
       const response = await fetch(`https://dummyjson.com/users/${user.id}`);
       const data = await response.json();
       setUserDetails(data);
+      console.log(data)
       localStorage.setItem('userDetails', JSON.stringify(data));
     };
 
@@ -19,7 +20,7 @@ function Profile() {
     <div>
       {userDetails && (
         <div>
-          <h1>{userDetails.name}</h1>
+          <h2>{userDetails.firstName + " " + userDetails.lastName}</h2>
           <p>{userDetails.email}</p>
           {/* Display other user details here */}
         </div>
