@@ -1,70 +1,33 @@
-# Getting Started with Create React App
+# Dummy Authentication
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a simple implementation of dummy authentication using the API provided at https://dummyjson.com/docs/auth. The project includes a login UI and a profile page.
 
-## Available Scripts
+## Task
 
-In the project directory, you can run:
+The task is to take the username and password from the user and then on click of the login button, send a POST request at the API given in the link above. If the response is 200 OK, then save the entire user object including token and the id in local storage and send the user to the profile page.
 
-### `npm start`
+Inside the profile page, a useEffect sends a fetch request at `https://dummyjson.com/users/${id}`, where id is the id you saved in the local storage. Save the user object with all the details using local storage again and display all of the information you receive.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Dummy Credentials
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Use any one of the usernames and passwords given below to actually log in and get a successful response. If the response is not 200 OK or successful then show the error provided by the API in the frontend on login.
 
-### `npm test`
+- Username: atuny0, Password: 9uQFF1Lh
+- Username: hbingley1, Password: CQutx25i8r
+- Username: rshawe2, Password: OWsTbMUgFc
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+You can get more valid usernames and password from https://dummyjson.com/users.
 
-### `npm run build`
+## UI Reference
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The UI reference can be found at Figma Link.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Marking Scheme (100 Marks)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Dummy authentication execution (10 marks)
+- Login UI and profile page creation (20 marks)
+- Username and password handling (15 marks)
+- Saving user object and navigating to the profile page (15 marks)
+- Fetching user details in the profile page (15 marks)
+- Displaying user information (15 marks)
+- Deployment (10 Marks)
