@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-
+import "./Profile.css"
 function Profile() {
   const [userDetails, setUserDetails] = useState(null);
   const user = JSON.parse(localStorage.getItem('user'));
@@ -19,10 +19,14 @@ function Profile() {
   return (
     <div>
       {userDetails && (
-        <div>
-          <h2>{userDetails.firstName + " " + userDetails.lastName}</h2>
-          <p>{userDetails.email}</p>
-          {/* Display other user details here */}
+        <div className='content'>
+          <div className="card">
+          <img  className='profile' src={userDetails.image} alt="" />
+          <h2>{userDetails.firstName + " " + userDetails.maidenName + " " + userDetails.lastName}</h2>
+          <p className='email'>{userDetails.email}</p>
+          <p className='phone'>{userDetails.phone}</p>
+          <p className='address'>{userDetails.address.address}</p>
+          </div>
         </div>
       )}
     </div>
